@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_elements_spectrum_item",
+  "info": {
+    "displayName": "Panel",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "letter": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "text": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "position": {
+      "type": "string"
+    }
+  }
+}

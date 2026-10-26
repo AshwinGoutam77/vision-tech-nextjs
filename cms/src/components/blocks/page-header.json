@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_blocks_page_header",
+  "info": {
+    "displayName": "Page header",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "showBreadcrumb": {
+      "type": "boolean",
+      "default": true
+    },
+    "settings": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.section-settings"
+    }
+  }
+}

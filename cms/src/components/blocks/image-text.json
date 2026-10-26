@@ -1,0 +1,48 @@
+{
+  "collectionName": "components_blocks_image_text",
+  "info": {
+    "displayName": "Image + text",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "tag": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "body": {
+      "type": "blocks"
+    },
+    "buttons": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.link"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "badge": {
+      "type": "string"
+    },
+    "imagePosition": {
+      "type": "enumeration",
+      "enum": [
+        "right",
+        "left"
+      ],
+      "default": "right"
+    },
+    "settings": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.section-settings"
+    }
+  }
+}

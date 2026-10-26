@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_blocks_partners",
+  "info": {
+    "displayName": "Partner logos",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "tag": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "intro": {
+      "type": "text"
+    },
+    "settings": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.section-settings"
+    }
+  }
+}

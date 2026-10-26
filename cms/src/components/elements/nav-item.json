@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_elements_nav_item",
+  "info": {
+    "displayName": "Menu item",
+    "description": "Top menu link. Add children for a dropdown, or tick \u201cshow product categories\u201d."
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "href": {
+      "type": "string"
+    },
+    "showProductCategories": {
+      "type": "boolean",
+      "default": false
+    },
+    "children": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.link"
+    }
+  }
+}

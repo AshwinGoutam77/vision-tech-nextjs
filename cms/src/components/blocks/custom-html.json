@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_blocks_custom_html",
+  "info": {
+    "displayName": "Custom HTML / embed",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "code": {
+      "type": "text"
+    },
+    "contained": {
+      "type": "boolean",
+      "default": true
+    },
+    "settings": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.section-settings"
+    }
+  }
+}

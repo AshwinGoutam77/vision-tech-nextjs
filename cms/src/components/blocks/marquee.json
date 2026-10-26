@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_blocks_marquee",
+  "info": {
+    "displayName": "Scrolling words",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "row1": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.word"
+    },
+    "row2": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.word"
+    },
+    "settings": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.section-settings"
+    }
+  }
+}

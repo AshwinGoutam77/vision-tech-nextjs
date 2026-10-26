@@ -1,0 +1,30 @@
+{
+  "name": "visiontec-cms",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Strapi CMS for the Visiontec Systems website",
+  "scripts": {
+    "develop": "strapi develop",
+    "dev": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "dependencies": {
+    "@strapi/plugin-color-picker": "^5.15.0",
+    "@strapi/plugin-users-permissions": "^5.15.0",
+    "@strapi/strapi": "^5.15.0",
+    "better-sqlite3": "^11.10.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.30.0",
+    "styled-components": "^6.1.0"
+  },
+  "engines": {
+    "node": ">=18.0.0 <=22.x.x",
+    "npm": ">=6.0.0"
+  },
+  "strapi": {
+    "uuid": "visiontec-cms"
+  }
+}

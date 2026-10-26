@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_elements_word",
+  "info": {
+    "displayName": "Word",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "word": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "collectionName": "components_blocks_enquiry_form",
+  "info": {
+    "displayName": "Enquiry form",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "tag": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "body": {
+      "type": "blocks"
+    },
+    "formType": {
+      "type": "enumeration",
+      "enum": [
+        "contact",
+        "quote",
+        "rental",
+        "support"
+      ],
+      "default": "contact"
+    },
+    "showContactDetails": {
+      "type": "boolean",
+      "default": false
+    },
+    "showCompany": {
+      "type": "boolean",
+      "default": true
+    },
+    "showPhone": {
+      "type": "boolean",
+      "default": true
+    },
+    "showDates": {
+      "type": "boolean",
+      "default": false
+    },
+    "submitLabel": {
+      "type": "string"
+    },
+    "successMessage": {
+      "type": "string"
+    },
+    "settings": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.section-settings"
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "collectionName": "components_shared_section_settings",
+  "info": {
+    "displayName": "Section design",
+    "description": "Background, spacing, #anchor and hide toggle"
+  },
+  "options": {},
+  "attributes": {
+    "background": {
+      "type": "enumeration",
+      "enum": [
+        "default",
+        "page",
+        "white",
+        "tint",
+        "dark",
+        "custom"
+      ],
+      "default": "default"
+    },
+    "customColor": {
+      "type": "customField",
+      "customField": "plugin::color-picker.color",
+      "options": {
+        "format": "hex"
+      }
+    },
+    "textColor": {
+      "type": "enumeration",
+      "enum": [
+        "dark",
+        "light"
+      ],
+      "default": "dark"
+    },
+    "spacing": {
+      "type": "enumeration",
+      "enum": [
+        "default",
+        "none",
+        "sm",
+        "md",
+        "lg"
+      ],
+      "default": "default"
+    },
+    "anchor": {
+      "type": "string"
+    },
+    "hidden": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

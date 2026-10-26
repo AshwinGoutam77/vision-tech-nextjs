@@ -1,0 +1,45 @@
+{
+  "collectionName": "components_blocks_rich_text",
+  "info": {
+    "displayName": "Text",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "tag": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "body": {
+      "type": "blocks"
+    },
+    "buttons": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.link"
+    },
+    "align": {
+      "type": "enumeration",
+      "enum": [
+        "left",
+        "center"
+      ],
+      "default": "left"
+    },
+    "width": {
+      "type": "enumeration",
+      "enum": [
+        "narrow",
+        "wide"
+      ],
+      "default": "narrow"
+    },
+    "settings": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.section-settings"
+    }
+  }
+}

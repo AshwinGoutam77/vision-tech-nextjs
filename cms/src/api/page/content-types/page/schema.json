@@ -1,0 +1,83 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pages",
+  "info": {
+    "singularName": "page",
+    "pluralName": "pages",
+    "displayName": "Page",
+    "description": "Pages built from sections. Slug \u201chome\u201d is the homepage."
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "sections": {
+      "type": "dynamiczone",
+      "components": [
+        "blocks.page-header",
+        "blocks.hero",
+        "blocks.statement",
+        "blocks.solutions",
+        "blocks.spectrum",
+        "blocks.marquee",
+        "blocks.products",
+        "blocks.categories",
+        "blocks.banner",
+        "blocks.steps",
+        "blocks.news",
+        "blocks.contact",
+        "blocks.rich-text",
+        "blocks.image-text",
+        "blocks.columns",
+        "blocks.split-list",
+        "blocks.cards",
+        "blocks.stats",
+        "blocks.faq",
+        "blocks.partners",
+        "blocks.enquiry-form",
+        "blocks.video",
+        "blocks.gallery",
+        "blocks.custom-html"
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

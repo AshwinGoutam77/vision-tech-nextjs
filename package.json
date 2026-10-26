@@ -1,0 +1,19 @@
+{
+  "name": "visiontec",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Visiontec Systems website: Strapi CMS (cms/) + Next.js frontend (web/)",
+  "scripts": {
+    "postinstall": "node scripts/setup.mjs && npm install --prefix cms && npm install --prefix web --ignore-scripts",
+    "dev": "concurrently -k -n cms,web -c magenta,cyan \"npm run develop --prefix cms\" \"npm run dev --prefix web\"",
+    "build": "npm run build --prefix cms && npm run build --prefix web",
+    "start": "concurrently -k -n cms,web -c magenta,cyan \"npm run start --prefix cms\" \"npm run start --prefix web\"",
+    "reset-content": "node -e \"require('fs').rmSync('cms/.tmp',{recursive:true,force:true});require('fs').rmSync('cms/public/uploads',{recursive:true,force:true});require('fs').mkdirSync('cms/public/uploads',{recursive:true});console.log('Content reset. Run npm run dev to re-import.')\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  },
+  "engines": {
+    "node": ">=20 <=22.x.x"
+  }
+}

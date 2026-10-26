@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_blocks_cards",
+  "info": {
+    "displayName": "Cards grid",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "tag": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "intro": {
+      "type": "text"
+    },
+    "columns": {
+      "type": "integer",
+      "default": 3,
+      "min": 2,
+      "max": 4
+    },
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.card"
+    },
+    "settings": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.section-settings"
+    }
+  }
+}

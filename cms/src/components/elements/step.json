@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_elements_step",
+  "info": {
+    "displayName": "Step",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "text": {
+      "type": "text"
+    }
+  }
+}

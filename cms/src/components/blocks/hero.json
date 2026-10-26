@@ -1,0 +1,89 @@
+{
+  "collectionName": "components_blocks_hero",
+  "info": {
+    "displayName": "Hero (animated)",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "background": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "badge": {
+      "type": "string"
+    },
+    "pillText": {
+      "type": "string"
+    },
+    "pillHref": {
+      "type": "string"
+    },
+    "titleLine1": {
+      "type": "string"
+    },
+    "titleLine2": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "text"
+    },
+    "primaryCta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.link"
+    },
+    "secondaryCta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.link"
+    },
+    "showGrid": {
+      "type": "boolean",
+      "default": true
+    },
+    "tileCommunity": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.hero-tile"
+    },
+    "signalTitle": {
+      "type": "string"
+    },
+    "tileCbrne": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.hero-tile"
+    },
+    "tilePremises": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.hero-tile"
+    },
+    "featuredLabel": {
+      "type": "string"
+    },
+    "featuredLinkLabel": {
+      "type": "string"
+    },
+    "featuredProduct": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::product.product"
+    },
+    "features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.feature"
+    },
+    "settings": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.section-settings"
+    }
+  }
+}

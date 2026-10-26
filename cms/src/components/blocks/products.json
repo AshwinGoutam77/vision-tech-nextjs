@@ -1,0 +1,50 @@
+{
+  "collectionName": "components_blocks_products",
+  "info": {
+    "displayName": "Products grid",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "tag": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "intro": {
+      "type": "text"
+    },
+    "mode": {
+      "type": "enumeration",
+      "enum": [
+        "all",
+        "featured",
+        "category",
+        "selected"
+      ],
+      "default": "all"
+    },
+    "category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::category.category"
+    },
+    "selected": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product.product"
+    },
+    "count": {
+      "type": "integer",
+      "default": 3,
+      "min": 1,
+      "max": 24
+    },
+    "settings": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.section-settings"
+    }
+  }
+}

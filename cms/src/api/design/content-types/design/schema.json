@@ -1,0 +1,157 @@
+{
+  "kind": "singleType",
+  "collectionName": "designs",
+  "info": {
+    "singularName": "design",
+    "pluralName": "designs",
+    "displayName": "Design & Colours",
+    "description": "Site-wide colours, fonts, effects and custom CSS"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "accentColor": {
+      "type": "customField",
+      "customField": "plugin::color-picker.color",
+      "options": {
+        "format": "hex"
+      }
+    },
+    "primaryColor": {
+      "type": "customField",
+      "customField": "plugin::color-picker.color",
+      "options": {
+        "format": "hex"
+      }
+    },
+    "glowColor": {
+      "type": "customField",
+      "customField": "plugin::color-picker.color",
+      "options": {
+        "format": "hex"
+      }
+    },
+    "backgroundColor": {
+      "type": "customField",
+      "customField": "plugin::color-picker.color",
+      "options": {
+        "format": "hex"
+      }
+    },
+    "textColor": {
+      "type": "customField",
+      "customField": "plugin::color-picker.color",
+      "options": {
+        "format": "hex"
+      }
+    },
+    "mutedColor": {
+      "type": "customField",
+      "customField": "plugin::color-picker.color",
+      "options": {
+        "format": "hex"
+      }
+    },
+    "cardColor": {
+      "type": "customField",
+      "customField": "plugin::color-picker.color",
+      "options": {
+        "format": "hex"
+      }
+    },
+    "lineColor": {
+      "type": "customField",
+      "customField": "plugin::color-picker.color",
+      "options": {
+        "format": "hex"
+      }
+    },
+    "darkColor": {
+      "type": "customField",
+      "customField": "plugin::color-picker.color",
+      "options": {
+        "format": "hex"
+      }
+    },
+    "footerColor": {
+      "type": "customField",
+      "customField": "plugin::color-picker.color",
+      "options": {
+        "format": "hex"
+      }
+    },
+    "headingFont": {
+      "type": "enumeration",
+      "enum": [
+        "Sora",
+        "DM_Sans",
+        "Inter",
+        "Manrope",
+        "Plus_Jakarta_Sans",
+        "Space_Grotesk",
+        "Outfit",
+        "Poppins",
+        "Montserrat",
+        "Work_Sans",
+        "IBM_Plex_Sans",
+        "Archivo",
+        "Lora",
+        "Fraunces",
+        "Playfair_Display"
+      ],
+      "default": "Sora"
+    },
+    "bodyFont": {
+      "type": "enumeration",
+      "enum": [
+        "Sora",
+        "DM_Sans",
+        "Inter",
+        "Manrope",
+        "Plus_Jakarta_Sans",
+        "Space_Grotesk",
+        "Outfit",
+        "Poppins",
+        "Montserrat",
+        "Work_Sans",
+        "IBM_Plex_Sans",
+        "Archivo",
+        "Lora",
+        "Fraunces",
+        "Playfair_Display"
+      ],
+      "default": "DM_Sans"
+    },
+    "baseFontSize": {
+      "type": "integer",
+      "default": 17,
+      "min": 14,
+      "max": 20
+    },
+    "showPreloader": {
+      "type": "boolean",
+      "default": true
+    },
+    "showCursorGlow": {
+      "type": "boolean",
+      "default": true
+    },
+    "showProgressBar": {
+      "type": "boolean",
+      "default": true
+    },
+    "enableAnimations": {
+      "type": "boolean",
+      "default": true
+    },
+    "currency": {
+      "type": "string",
+      "default": "CAD"
+    },
+    "customCss": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_elements_hero_tile",
+  "info": {
+    "displayName": "Hero tile",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

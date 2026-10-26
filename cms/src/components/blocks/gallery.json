@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_blocks_gallery",
+  "info": {
+    "displayName": "Image gallery",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "tag": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "columns": {
+      "type": "integer",
+      "default": 3,
+      "min": 2,
+      "max": 4
+    },
+    "images": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.gallery-item"
+    },
+    "settings": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.section-settings"
+    }
+  }
+}

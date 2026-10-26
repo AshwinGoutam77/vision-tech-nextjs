@@ -1,0 +1,75 @@
+{
+  "kind": "collectionType",
+  "collectionName": "enquiries",
+  "info": {
+    "singularName": "enquiry",
+    "pluralName": "enquiries",
+    "displayName": "Enquiry",
+    "description": "Form submissions and quote requests from the website"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "contact",
+        "quote",
+        "rental",
+        "support",
+        "product"
+      ],
+      "default": "contact"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "new",
+        "inProgress",
+        "quoted",
+        "closed"
+      ],
+      "default": "new"
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "company": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "phone": {
+      "type": "string"
+    },
+    "message": {
+      "type": "text"
+    },
+    "startDate": {
+      "type": "date"
+    },
+    "endDate": {
+      "type": "date"
+    },
+    "items": {
+      "type": "json"
+    },
+    "product": {
+      "type": "string"
+    },
+    "language": {
+      "type": "string"
+    },
+    "pageUrl": {
+      "type": "string"
+    },
+    "internalNotes": {
+      "type": "text"
+    }
+  }
+}
