@@ -101,3 +101,4 @@ npm run build && npm start
 - **Images missing on the site**: check `NEXT_PUBLIC_STRAPI_URL` in `web/.env.local`.
 - **“Can't reach the CMS”**: Strapi is still starting; refresh after a few seconds.
 # vision-tech-nextjs
+# vision-tech-nextjs
